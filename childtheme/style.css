@@ -15,10 +15,14 @@ html {
 .entry-title,
 body,
 em,
-footer p {
+footer p,
+.menu-navigation-container {
   font-family: sofia-pro, sans-serif;
   font-weight: bold;
   font-style: normal;
+}
+.entry-title {
+  background-color: #299a48;
 }
 p {
   font-family: brix-slab, serif;
@@ -34,6 +38,33 @@ body p,
 .entry-title,
 em {
   color: #f9f6fe;
+}
+#site-navigation {
+  display: flex;
+  justify-content: end;
+}
+.main-navigation .main-menu > li > a {
+  color: #f9f6fe;
+  padding: 20px;
+}
+.main-navigation .main-menu > li {
+  border: #f9f6fe 1px solid;
+}
+.main-navigation .sub-menu > li {
+  background-color: transparent;
+  color: #f9f6fe;
+}
+.main-navigation .sub-menu > li > a {
+  color: #f9f6fe;
+}
+.main-navigation .sub-menu > li > a:hover {
+  color: transparent;
+}
+.submenu-expand {
+  background-color: #f9f6fe;
+}
+button svg {
+  display: none;
 }
 button {
   font-family: sofia-pro, sans-serif;
@@ -59,7 +90,11 @@ button {
   .wp-block-search__inside-wrapper {
   border: none;
 }
-header #masthead .site-header {
+.site-header {
+  height: 400px;
   background-image: url(billeder/header_billede.webp);
-  background-image: cover;
+}
+#colophon .widget-column .widget {
+  margin-right: calc(3 * 1rem);
+  width: calc(100% - (3 * 1rem));
 }
