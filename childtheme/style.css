@@ -8,7 +8,12 @@ Author: Martha S
 */
 @import url("https://use.typekit.net/bkt7dui.css");
 @import url("https://use.typekit.net/bkt7dui.css");
-.entry-title {
+html {
+  padding: 0;
+  margin: 0;
+}
+.entry-title,
+body {
   font-family: sofia-pro, sans-serif;
   font-weight: bold;
   font-style: normal;
@@ -18,10 +23,11 @@ p {
   font-weight: 200;
   font-style: normal;
 }
-#main {
+#content,
+footer {
   background-color: #299a48;
 }
-#main p,
+body p,
 .entry-title {
   color: #f9f6fe;
 }
