@@ -33,3 +33,24 @@ body p,
 em {
   color: #f9f6fe;
 }
+button {
+  font-family: sofia-pro condensed, sans-serif;
+
+  font-style: normal;
+}
+.wp-block-search__button {
+  color: #234d1f;
+  background-color: #f9f6fe;
+}
+.wp-block-search__button:hover {
+  background-color: #234d1f;
+  color: #f9f6fe;
+}
+.wp-block-search__input {
+  background-color: #f9f6fe;
+  color: lightgray;
+}
+.wp-block-search.wp-block-search__button-inside
+  .wp-block-search__inside-wrapper {
+  border: none;
+}
