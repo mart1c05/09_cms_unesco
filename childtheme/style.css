@@ -14,7 +14,8 @@ html {
 }
 .entry-title,
 body,
-em {
+em,
+footer p {
   font-family: sofia-pro, sans-serif;
   font-weight: bold;
   font-style: normal;
@@ -24,6 +25,7 @@ p {
   font-weight: 200;
   font-style: normal;
 }
+
 #content,
 footer {
   background-color: #299a48;
@@ -34,13 +36,15 @@ em {
   color: #f9f6fe;
 }
 button {
-  font-family: sofia-pro condensed, sans-serif;
-
+  font-family: sofia-pro, sans-serif;
+  font-stretch: condensed;
   font-style: normal;
 }
 .wp-block-search__button {
   color: #234d1f;
   background-color: #f9f6fe;
+  border: none;
+  border-radius: 0%;
 }
 .wp-block-search__button:hover {
   background-color: #234d1f;
@@ -49,8 +53,13 @@ button {
 .wp-block-search__input {
   background-color: #f9f6fe;
   color: lightgray;
+  font-style: italic;
 }
 .wp-block-search.wp-block-search__button-inside
   .wp-block-search__inside-wrapper {
   border: none;
+}
+header #masthead .site-header {
+  background-image: url(billeder/header_billede.webp);
+  background-image: cover;
 }
