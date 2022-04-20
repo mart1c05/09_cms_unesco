@@ -50,6 +50,10 @@ em {
 .main-navigation .main-menu > li {
   border: #f9f6fe 1px solid;
 }
+a:hover,
+a:active {
+  color: #299a48;
+}
 .main-navigation .sub-menu > li {
   background-color: transparent;
   color: #f9f6fe;
@@ -58,10 +62,22 @@ em {
   color: #f9f6fe;
 }
 .main-navigation .sub-menu > li > a:hover {
-  color: transparent;
+  color: #f9f6fe;
 }
 .submenu-expand {
   background-color: #f9f6fe;
+}
+.main-navigation .main-menu > li > a:hover,
+.main-navigation .main-menu > li > a:hover + svg {
+  color: #f9f6fe;
+}
+.main-navigation .sub-menu {
+  background-color: transparent;
+  border: 1px solid #f9f6fe;
+}
+.main-navigation .sub-menu:hover {
+  background-color: transparent;
+  border: 1px solid #f9f6fe;
 }
 button svg {
   display: none;
