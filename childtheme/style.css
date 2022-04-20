@@ -6,8 +6,12 @@ Description: Twenty Nineteen Child Theme
 Author: Martha S
 
 */
+
+/* FONT */
 @import url("https://use.typekit.net/bkt7dui.css");
 @import url("https://use.typekit.net/bkt7dui.css");
+
+/* GENERALT */
 html {
   padding: 0;
   margin: 0;
@@ -39,6 +43,10 @@ body p,
 em {
   color: #f9f6fe;
 }
+
+/* HEADER */
+
+/* Navigation  */
 #site-navigation {
   display: flex;
   justify-content: end;
@@ -50,19 +58,17 @@ em {
 .main-navigation .main-menu > li {
   border: #f9f6fe 1px solid;
 }
-a:hover,
-a:active {
-  color: #299a48;
-}
 .main-navigation .sub-menu > li {
   background-color: transparent;
   color: #f9f6fe;
 }
 .main-navigation .sub-menu > li > a {
   color: #f9f6fe;
+  font-size: 0.8rem;
 }
 .main-navigation .sub-menu > li > a:hover {
   color: #f9f6fe;
+  background-color: transparent;
 }
 .submenu-expand {
   background-color: #f9f6fe;
@@ -75,7 +81,7 @@ a:active {
   background-color: transparent;
   border: 1px solid #f9f6fe;
 }
-.main-navigation .sub-menu:hover {
+.main-navigation .sub-menu ul:hover {
   background-color: transparent;
   border: 1px solid #f9f6fe;
 }
@@ -106,10 +112,16 @@ button {
   .wp-block-search__inside-wrapper {
   border: none;
 }
+
+/* header billede */
 .site-header {
-  height: 400px;
-  background-image: url(billeder/header_billede.webp);
+  background-image: url(billeder/header_billede.png);
+  background-size: cover;
+  height: 600px;
 }
+
+/* FOOTER */
+
 #colophon .widget-column .widget {
   margin-right: calc(3 * 1rem);
   width: calc(100% - (3 * 1rem));
