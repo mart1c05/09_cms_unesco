@@ -46,10 +46,21 @@ em {
 
 /* HEADER */
 
+/* Logo */
+.site-logo .custom-logo-link {
+  border-radius: 0%;
+}
+.site-logo .custom-logo-link:hover,
+.site-logo .custom-logo-link:active,
+.site-logo .custom-logo-link:focus {
+  box-shadow: none;
+}
+
 /* Navigation  */
 #site-navigation {
-  display: flex;
+  display: grid;
   justify-content: end;
+  margin-right: -100px;
 }
 .main-navigation .main-menu > li > a {
   color: #f9f6fe;
@@ -85,6 +96,27 @@ em {
   background-color: transparent;
   border: 1px solid #f9f6fe;
 }
+
+/* Har prøvet at fjerne hvid prik under navigation uden held: */
+/* .sub-menu .hidden-links {
+  color: transparent;
+  background-color: transparent;
+  border: transparent;
+} */
+
+/* header billede */
+.site-header {
+  background-image: url(billeder/header_billede.png);
+  background-size: cover;
+  height: 600px;
+}
+
+/* FOOTER */
+
+#colophon .widget-column .widget {
+  margin-right: calc(3 * 1rem);
+  width: calc(100% - (3 * 1rem));
+}
 button svg {
   display: none;
 }
@@ -111,18 +143,4 @@ button {
 .wp-block-search.wp-block-search__button-inside
   .wp-block-search__inside-wrapper {
   border: none;
-}
-
-/* header billede */
-.site-header {
-  background-image: url(billeder/header_billede.png);
-  background-size: cover;
-  height: 600px;
-}
-
-/* FOOTER */
-
-#colophon .widget-column .widget {
-  margin-right: calc(3 * 1rem);
-  width: calc(100% - (3 * 1rem));
 }
