@@ -78,9 +78,15 @@ h2 {
 /* HEADER */
 
 /* Logo */
+
+.site-logo {
+  background-image: url(/childtheme/logo/ikoner/unesco_asp_logo_green.png);
+}
+
 .site-logo .custom-logo-link {
   border-radius: 0%;
 }
+
 .site-logo .custom-logo-link:hover,
 .site-logo .custom-logo-link:active,
 .site-logo .custom-logo-link:focus {
