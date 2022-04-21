@@ -54,6 +54,13 @@ h2 {
   display: grid;
   place-content: center;
 }
+
+/*_________________________________________MUTUAL STYLE_____________________________________*/
+
+.site-header {
+  background-color: #299a48;
+}
+
 /* Knapper */
 
 /* .entry
