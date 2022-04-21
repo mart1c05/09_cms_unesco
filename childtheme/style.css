@@ -55,10 +55,10 @@ h2 {
   place-content: center;
 }
 
-/*_________________________________________MUTUAL STYLE_____________________________________*/
+/*_________________________________________MUTUAL STYLE______________________________________*/
 
 .site-header {
-  background-color: #299a48;
+  background-color: #f9f6fe;
 }
 
 /* Knapper */
@@ -96,6 +96,7 @@ h2 {
 .main-navigation .main-menu > li > a {
   color: #234d1f;
   padding: 20px;
+  border: 1px solid #234d1f;
 }
 .main-navigation .main-menu > li {
   border: #234d1f;
