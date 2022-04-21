@@ -169,7 +169,7 @@ button {
   border: none;
 }
 
-/* Forside */
+/*____________________________________FORSIDE____________________________________*/
 .forside .site-header {
   background-image: url(billeder/header_billede.png);
   background-size: cover;
@@ -233,4 +233,12 @@ button {
 
 .forside #content {
   background-color: #299a48;
+}
+
+/*____________________________________________________________________________*/
+
+/*__________________________________test___________________________________*/
+
+.site-description {
+  display: none;
 }
