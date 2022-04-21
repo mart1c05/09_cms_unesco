@@ -9,7 +9,6 @@ Author: Martha S
 
 /* FONT */
 @import url("https://use.typekit.net/bkt7dui.css");
-@import url("https://use.typekit.net/bkt7dui.css");
 
 /* GENERALT */
 html {
@@ -20,15 +19,17 @@ html {
 body,
 em,
 footer p,
-.menu-navigation-container {
+.menu-navigation-container,
+figcaption,
+h2 {
   font-family: sofia-pro, sans-serif;
   font-weight: bold;
   font-style: normal;
 }
 .entry-title {
-  background-color: #299a48;
+  background-color: #f9f6fe;
 }
-p {
+body p {
   font-family: brix-slab, serif;
   font-weight: 200;
   font-style: normal;
@@ -40,8 +41,28 @@ footer {
 }
 body p,
 .entry-title,
-em {
-  color: #f9f6fe;
+em,
+.entry figcaption,
+h2 {
+  color: #234d1f;
+}
+
+.entry-title {
+  display: grid;
+  place-content: center;
+}
+/* Knapper */
+
+/* .entry
+  .entry-content
+  .wp-block-button:not(.is-style-squared)
+  .wp-block-button__link {
+  background-color: #299a48;
+  border-radius: 0%;
+} */
+/* Kan ikke få knap border frem på forsiden */
+.entry .entry-content .wp-block-button {
+  border: 1px solid #f9f6fe;
 }
 
 /* HEADER */
@@ -63,22 +84,22 @@ em {
   margin-right: -100px;
 }
 .main-navigation .main-menu > li > a {
-  color: #f9f6fe;
+  color: #234d1f;
   padding: 20px;
 }
 .main-navigation .main-menu > li {
-  border: #f9f6fe 1px solid;
+  border: #234d1f;
 }
 .main-navigation .sub-menu > li {
   background-color: transparent;
-  color: #f9f6fe;
+  color: #234d1f;
 }
 .main-navigation .sub-menu > li > a {
-  color: #f9f6fe;
+  color: #234d1f;
   font-size: 0.8rem;
 }
 .main-navigation .sub-menu > li > a:hover {
-  color: #f9f6fe;
+  color: #234d1f;
   background-color: transparent;
 }
 .submenu-expand {
@@ -86,17 +107,16 @@ em {
 }
 .main-navigation .main-menu > li > a:hover,
 .main-navigation .main-menu > li > a:hover + svg {
-  color: #f9f6fe;
+  color: #234d1f;
 }
 .main-navigation .sub-menu {
   background-color: transparent;
-  border: 1px solid #f9f6fe;
+  border: 1px solid #234d1f;
 }
 .main-navigation .sub-menu ul:hover {
   background-color: transparent;
-  border: 1px solid #f9f6fe;
+  border: 1px solid #234d1f;
 }
-
 /* Har prøvet at fjerne hvid prik under navigation uden held: */
 /* .sub-menu .hidden-links {
   color: transparent;
@@ -105,17 +125,18 @@ em {
 } */
 
 /* header billede */
-.site-header {
+/* .forside .site-header {
   background-image: url(billeder/header_billede.png);
   background-size: cover;
   height: 600px;
-}
+} */
 
 /* FOOTER */
 
 #colophon .widget-column .widget {
   margin-right: calc(3 * 1rem);
   width: calc(100% - (3 * 1rem));
+  border-top: 2px solid #f9f6fe;
 }
 button svg {
   display: none;
@@ -143,4 +164,66 @@ button {
 .wp-block-search.wp-block-search__button-inside
   .wp-block-search__inside-wrapper {
   border: none;
+}
+
+/* Forside */
+.forside .site-header {
+  background-image: url(billeder/header_billede.png);
+  background-size: cover;
+  height: 600px;
+}
+.forside body p,
+.entry-title,
+em,
+.entry figcaption,
+h2 {
+  color: #f9f6fe;
+}
+
+.forside
+  .entry
+  .entry-content
+  .wp-block-button:not(.is-style-squared)
+  .wp-block-button__link {
+  background-color: #299a48;
+  border-radius: 0%;
+}
+
+.forside .entry-title {
+  background-color: #299a48;
+}
+
+.forside .main-navigation .main-menu > li > a {
+  color: #f9f6fe;
+  padding: 20px;
+}
+.forside .main-navigation .main-menu > li {
+  border: #f9f6fe 1px solid;
+}
+.forside .main-navigation .sub-menu > li {
+  background-color: transparent;
+  color: #f9f6fe;
+}
+.forside .main-navigation .sub-menu > li > a {
+  color: #f9f6fe;
+  font-size: 0.8rem;
+}
+.forside .main-navigation .sub-menu > li > a:hover {
+  color: #f9f6fe;
+  background-color: transparent;
+}
+.forside .submenu-expand {
+  background-color: #f9f6fe;
+}
+.forside .main-navigation .main-menu > li > a:hover,
+.forside .main-navigation .main-menu > li > a:hover + svg {
+  color: #f9f6fe;
+}
+.forside .main-navigation .sub-menu {
+  background-color: transparent;
+  border: 1px solid #f9f6fe;
+}
+.forside .main-navigation .sub-menu ul:hover {
+  background-color: transparent;
+  border: 1px solid #f9f6fe;
 }
