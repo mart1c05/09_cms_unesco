@@ -35,7 +35,10 @@ body p {
   font-style: normal;
 }
 
-#content,
+#content {
+  background-color: #f9f6fe;
+}
+
 footer {
   background-color: #299a48;
 }
@@ -226,4 +229,8 @@ button {
 .forside .main-navigation .sub-menu ul:hover {
   background-color: transparent;
   border: 1px solid #f9f6fe;
+}
+
+.forside #content {
+  background-color: #299a48;
 }
