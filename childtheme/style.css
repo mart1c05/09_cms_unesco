@@ -173,10 +173,10 @@ button {
   height: 600px;
 }
 .forside body p,
-.entry-title,
-em,
-.entry figcaption,
-h2 {
+.forside .entry-title,
+.forside em,
+.forside .entry figcaption,
+.forside h2 {
   color: #f9f6fe;
 }
 
