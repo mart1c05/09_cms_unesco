@@ -15,6 +15,7 @@ html {
   padding: 0;
   margin: 0;
 }
+
 .entry-title,
 body,
 em,
@@ -29,10 +30,14 @@ h2 {
 .entry-title {
   background-color: #f9f6fe;
 }
-body p {
+body p,
+tbody {
   font-family: brix-slab, serif;
   font-weight: 200;
   font-style: normal;
+}
+strong {
+  font-weight: 800;
 }
 
 #content {
@@ -122,12 +127,19 @@ footer p {
 }
 .submenu-expand {
   background-color: #f9f6fe;
+  padding-top: 20px;
 }
 .main-navigation .main-menu > li > a:hover,
-.main-navigation .main-menu > li > a:hover + svg {
+.main-navigation .main-menu > li > a:hover + svg,
+.main-navigation .main-menu > li.current_page_item > a {
   color: #f9f6fe;
   background-color: #234d1f;
 }
+.menu-navigation-container .current_page_item .main-navigation a:visited {
+  color: #f9f6fe;
+  background-color: #234d1f;
+}
+
 .main-navigation .sub-menu {
   background-color: #f9f6fe;
   border: 1px solid #234d1f;
@@ -140,19 +152,47 @@ footer p {
   color: #f9f6fe;
   background-color: #234d1f;
 }
-/* Har prøvet at fjerne hvid prik under navigation uden held: */
-/* .sub-menu .hidden-links {
-  color: transparent;
-  background-color: transparent;
-  border: transparent;
-} */
+.entry-content {
+  margin: 30px;
+}
 
-/* header billede */
-/* .forside .site-header {
-  background-image: url(billeder/header_billede.png);
-  background-size: cover;
-  height: 600px;
-} */
+/* (verdensmålsskoler side) */
+
+.wp-block-table td {
+  border-style: none;
+  padding: 1em;
+}
+
+.wp-container-1 .wp-block-group__inner-container {
+  background-color: white;
+  border: #234d1f 1px solid;
+  display: grid;
+  margin-bottom: 30px;
+}
+.wp-container-1 .wp-block-group__inner-container p {
+  padding: 1.5em;
+}
+.wp-container-1 .wp-block-group__inner-container h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.entry
+  .entry-content
+  .wp-block-button
+  .wp-block-button__link:not(.has-background) {
+  color: #f9f6fe;
+  background-color: #234d1f;
+  border-radius: 0%;
+}
+
+.entry
+  .entry-content
+  .wp-block-button
+  .wp-block-button__link:not(.has-background):hover {
+  background-color: #299a48;
+}
 
 /* FOOTER */
 
@@ -177,10 +217,12 @@ button {
   border: none;
   border-radius: 0%;
 }
+
 .wp-block-search__button:hover {
-  background-color: #234d1f;
+  background-color: #299a48;
   color: #f9f6fe;
 }
+
 .wp-block-search__input {
   background-color: #f9f6fe;
   color: lightgray;
@@ -206,6 +248,14 @@ input[type="submit"]:hover {
 
 /*____________________________________FORSIDE____________________________________*/
 
+@media (min-width: 600px) {
+  .forside .site-header {
+    background-image: url(billeder/header_billede.png);
+    background-size: cover;
+    height: 600px;
+  }
+}
+
 .forside img .custom-logo {
   border-radius: 0%;
   background-image: url(logo/nyt-logo-pink.png);
@@ -215,7 +265,6 @@ input[type="submit"]:hover {
 .forside .site-header {
   background-image: url(billeder/header_billede.png);
   background-size: cover;
-  height: 600px;
 }
 .forside p,
 .forside .entry-title,
@@ -243,9 +292,7 @@ input[type="submit"]:hover {
   padding: 20px;
   border: 1px solid #f9f6fe;
 }
-.forside .main-navigation .main-menu > li {
-  border: 1px solid #f9f6fe;
-}
+
 .forside .main-navigation .sub-menu > li {
   background-color: transparent;
   color: #f9f6fe;
