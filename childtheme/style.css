@@ -282,6 +282,14 @@ input[type="submit"]:hover {
 }
 /*____________________________________________________________________________*/
 
+/*______________________________Projekter CSS________________________________*/
+#container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding-inline: 4rem;
+}
+
 /*__________________________________test___________________________________*/
 
 .site-description {
