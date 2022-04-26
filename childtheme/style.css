@@ -418,25 +418,9 @@ h1 {
   text-align: center;
 }
 
-#single_container .info {
-  padding: 0.5rem;
-  margin-inline: auto;
-}
-
 .img_container1 {
   width: 80vw;
   margin-inline: auto;
-}
-
-.single_img .lille1,
-.lille2,
-.lille3 {
-  max-width: 80%;
-  place-self: center;
-}
-
-#single_container .beskrivelse {
-  margin-inline: 2rem;
 }
 
 .img_container2 img {
@@ -446,14 +430,14 @@ h1 {
   margin-bottom: 3rem;
 }
 
-.img_container2 {
+/* .img_container2 {
   margin-inline: auto;
-}
+} */
 
-.projekt_img {
+/* .projekt_img {
   width: 80vw;
   margin-inline: auto;
-}
+} */
 
 .projekt_knap,
 .materialer_knap {
