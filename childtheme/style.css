@@ -420,11 +420,12 @@ h1 {
 
 #single_container .info {
   padding: 0.5rem;
-  margin-inline: 2rem;
+  margin-inline: auto;
 }
 
 .img_container1 {
-  display: grid;
+  width: 80vw;
+  margin-inline: auto;
 }
 
 .single_img .lille1,
@@ -443,6 +444,15 @@ h1 {
   aspect-ratio: 1/1;
   object-fit: cover;
   margin-bottom: 3rem;
+}
+
+.img_container2 {
+  margin-inline: auto;
+}
+
+.projekt_img {
+  width: 80vw;
+  margin-inline: auto;
 }
 
 .projekt_knap,

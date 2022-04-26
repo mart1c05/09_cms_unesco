@@ -32,7 +32,7 @@ get_header();
 			</div>
           </article>
 
-		  <img class="projekt_img" src="/billeder/popup_edit-10.jpg" alt="verdensmål">
+		  <img class="projekt_img" src="<?php echo get_stylesheet_directory_uri() ?>/billeder/popup_edit-10.jpg" alt="verdensmål">
 		  <button class="projekt_knap">Projekter</button>
 		  <button class="materialer_knap">Undervisningsmateriale</button>
        
