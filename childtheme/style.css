@@ -73,18 +73,8 @@ footer p {
   background-color: #f9f6fe;
 }
 
-/* Knapper */
-
-/* .entry
-  .entry-content
-  .wp-block-button:not(.is-style-squared)
-  .wp-block-button__link {
-  background-color: #299a48;
-  border-radius: 0%;
-} */
-/* Kan ikke få knap border frem på forsiden */
-.entry .entry-content .wp-block-button {
-  border: 1px solid #f9f6fe;
+.wp-block-seperator {
+  display: none;
 }
 
 /* HEADER */
