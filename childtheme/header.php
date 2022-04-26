@@ -21,17 +21,7 @@
 
 <?php if ( is_page( '39' ) ) { ?>
 	<body class="forside" <?php body_class(); ?>>
-	<script>
-	console.log("hej forside");
-	document.addEventListener("DOMContentLoaded", start);
-	function start(){
-   
-        document.querySelector('.custom-logo').src = "http://marthascales.dk/kea/09_cms/09_cms_unesco-wp/wp-content/uploads/2022/04/nyt-logo-pink.png";
-    
-   };
-// document.querySelector(".custom-logo").src = "http://marthascales.dk/kea/09_cms/09_cms_unesco-wp/wp-content/uploads/2022/04/nyt-logo-pink.png"
 
-	</script>
 	    <?php } else { ?>
 			<body class="underside"<?php body_class(); ?>>
     <?php } ?>
@@ -73,5 +63,12 @@
 				</div>
 			<?php endif; ?>
 		</header><!-- #masthead -->
+		<!-- <script>
+	console.log("hej forside");
+	document.querySelector(".site-logo img").src = "http://marthascales.dk/kea/09_cms/09_cms_unesco-wp/wp-content/uploads/2022/04/nyt-logo-pink.png";
+    
+   
+// document.querySelector(".custom-logo").src = "http://marthascales.dk/kea/09_cms/09_cms_unesco-wp/wp-content/uploads/2022/04/nyt-logo-pink.png"
 
+	</script> -->
 	<div id="content" class="site-content">

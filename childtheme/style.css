@@ -7,10 +7,10 @@ Author: Martha S
 
 */
 
-/* FONT */
+/*____________________________________FONT____________________________________*/
 @import url("https://use.typekit.net/bkt7dui.css");
 
-/* GENERALT */
+/*_________________________________________MUTUAL STYLE______________________________________*/
 html {
   padding: 0;
   margin: 0;
@@ -63,24 +63,21 @@ footer p {
 .entry-title {
   display: grid;
   place-content: center;
+  margin-top: 20px;
 }
 .site-description {
   display: none;
-}
-
-/*_________________________________________MUTUAL STYLE______________________________________*/
-
-.site-header {
-  background-color: #f9f6fe;
 }
 
 hr {
   display: none;
 }
 
-/* HEADER */
-
-/* Logo */
+/*____________________________________HEADER____________________________________*/
+.site-header {
+  background-color: #f9f6fe;
+}
+/*____________________________________LOGO____________________________________*/
 
 .site-logo .custom-logo-link {
   border-radius: 0%;
@@ -92,7 +89,7 @@ hr {
   box-shadow: none;
 }
 
-/* Navigation  */
+/*____________________________________NAVIGATION____________________________________*/
 #site-navigation {
   display: grid;
   justify-content: center;
@@ -101,7 +98,7 @@ hr {
 .main-navigation .main-menu > li > a {
   color: #234d1f;
   padding: 10px;
-  border: 1px solid #234d1f;
+  border: 2px solid #234d1f;
   font-size: 0.5rem;
 }
 
@@ -136,7 +133,7 @@ hr {
 
 .main-navigation .sub-menu {
   background-color: #f9f6fe;
-  border: 1px solid #234d1f;
+  border: 2px solid #234d1f;
 }
 .main-navigation .sub-menu > li > a {
   color: #234d1f;
@@ -149,7 +146,7 @@ hr {
   margin: 30px;
 }
 
-/* (verdensmålsskoler side) */
+/*____________________________________VERDENSMÅLSKOLER____________________________________*/
 
 .wp-block-table td {
   border-style: none;
@@ -199,7 +196,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #299a48;
 }
-/* undervisningsmaterialer side */
+/*____________________________________UNDERVISNINGSMATERIALER ____________________________________*/
 
 #post-46.post-46.page.type-page.status-publish.hentry.entry {
   background-color: #299a48;
@@ -212,20 +209,20 @@ input[type="submit"]:hover {
   background-color: #299a48;
 }
 
-/* Om side  */
-
-.entry-content :nth-child(4) {
-  border: #299a47 20px dashed;
-  /* padding: 30px; */
-}
-.wp-block-column :nth-child(4) {
-  border: none;
-}
-.wp-image-316 {
-  min-width: 110%;
+/*____________________________________OM UNESCO ASP____________________________________*/
+#post-33 .entry-content {
+  display: grid;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 100%;
 }
 
-/* FOOTER */
+#post-33 .wp-image-316 {
+  max-width: 50%;
+  margin: auto;
+}
+/*____________________________________FOOTER____________________________________*/
 
 #colophon .widget-column .widget {
   margin-right: calc(3 * 1rem);
@@ -331,7 +328,10 @@ button {
 .forside a {
   color: #f9f6fe;
 }
-/*____________________________________________________________________________*/
+.forside .forside .wp-image-86 {
+  max-width: 80%;
+  margin: auto;
+}
 
 /*______________________________Projekter CSS________________________________*/
 h1 {
@@ -494,7 +494,7 @@ h1 {
     font-size: 1rem;
     background-color: transparent;
     color: #f9f6fe;
-    border: 1px solid #f9f6fe;
+    border: 2px solid #f9f6fe;
   }
   .forside .main-navigation .sub-menu > li > a {
     font-size: 0.8rem;
@@ -507,5 +507,19 @@ h1 {
     justify-content: end;
     margin-right: -100px;
     margin-top: 0;
+  }
+
+  .forside .wp-image-86 {
+    margin: auto;
+    max-width: 110%;
+  }
+  .entry-content :nth-child(4) {
+    margin: 20px;
+    gap: 80px;
+  }
+
+  #post-33 .wp-image-316 {
+    max-width: 60%;
+    margin-left: auto;
   }
 }
