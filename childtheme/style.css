@@ -73,7 +73,7 @@ footer p {
   background-color: #f9f6fe;
 }
 
-.wp-block-seperator {
+hr {
   display: none;
 }
 
@@ -209,6 +209,16 @@ input[type="submit"]:hover {
   h1.entry-title {
   color: #f9f6fe;
   background-color: #299a48;
+}
+
+/* Om side  */
+
+#post-33 .wp-block-columns {
+  padding: 10px;
+  border: 1px dashed #299a48;
+}
+#post-33 .wp-image-316 {
+  min-width: 100%;
 }
 /* FOOTER */
 
