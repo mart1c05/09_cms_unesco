@@ -215,11 +215,9 @@ input[type="submit"]:hover {
 /* Om side  */
 
 .entry-content :nth-child(4) {
-  border: #299a48 1px dashed;
+  border: #299a48 3px dashed;
   padding: 30px;
   overflow: hidden;
-
-  border-spacing: 100px;
 }
 .wp-block-column :nth-child(4) {
   border: none;
