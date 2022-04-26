@@ -32,7 +32,7 @@ get_header();
 			</div>
           </article>
 
-		  <img class="projekt_img" src="./logo/nyt-logo-grøn.png" alt="logo">
+		  <img class="projekt_img" src="/billeder/popup_edit-10.jpg" alt="verdensmål">
 		  <button class="projekt_knap">Projekter</button>
 		  <button class="materialer_knap">Undervisningsmateriale</button>
        
