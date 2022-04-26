@@ -214,13 +214,17 @@ input[type="submit"]:hover {
 
 /* Om side  */
 
-#post-33 .wp-block-columns {
-  padding: 10px;
-  border: 1px dashed #299a48;
+.entry-content :nth-child(4) {
+  border: #299a48 1px dashed;
+  padding: 30px;
+  overflow: hidden;
+
+  border-spacing: 100px;
 }
-#post-33 .wp-image-316 {
-  min-width: 100%;
+.wp-block-column :nth-child(4) {
+  border: none;
 }
+
 /* FOOTER */
 
 #colophon .widget-column .widget {
