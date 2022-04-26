@@ -217,10 +217,12 @@ input[type="submit"]:hover {
 .entry-content :nth-child(4) {
   border: #299a47 20px dashed;
   padding: 30px;
-  stroke-width: 3;
 }
 .wp-block-column :nth-child(4) {
   border: none;
+}
+.wp-image-316 {
+  min-width: 110%;
 }
 
 /* FOOTER */
