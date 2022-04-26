@@ -17,7 +17,11 @@ get_header();
 			<h1>Projekter</h1>
 			<section id="filtrering">
 				<button class="filter" data-klassetrin="alle">Alle</button>
-			</section>
+				</section>
+			<hr class="hr_projekt">
+			<div class="upload_div">
+			<button class="upload">Upload projekt</button>
+			</div>
 
 
 		<section id="container">
