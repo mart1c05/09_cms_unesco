@@ -347,6 +347,28 @@ h1 {
   background-color: #234d1f;
 }
 
+.hr_projekt {
+  color: #234d1f;
+  padding-inline: 2rem;
+}
+
+.upload_div {
+  display: flex;
+  justify-content: center;
+}
+
+.upload {
+  color: #234d1f;
+  background-color: #f9f6fe;
+  border: #234d1f solid 1px;
+  border-radius: 0%;
+  margin-block: 2rem;
+}
+.upload:hover {
+  color: #f9f6fe;
+  background-color: #234d1f;
+}
+
 #container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
