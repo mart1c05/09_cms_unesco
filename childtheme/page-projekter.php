@@ -30,6 +30,7 @@ get_header();
             <img src="" alt="" />
             <h3></h3>
             <p class="aargang"></p>
+			<p class="fag"></p>
           </article>
         </template>
       </section>
@@ -90,7 +91,8 @@ get_header();
 					const klon = template.cloneNode(true).content;
 					klon.querySelector("img").src = projekt.billede.guid;
 					klon.querySelector("h3").textContent = projekt.title.rendered;
-					klon.querySelector(".aargang").textContent = `Klassetrin: ${projekt.aargang[0].name}, ` + `Fagtype: ${projekt.fagvalg[0].name}`;
+					klon.querySelector(".aargang").textContent = `Klassetrin: ${projekt.aargang[0].name}, `;
+					klon.querySelector(".fag").textContent=`Fagtype: ${projekt.fagvalg[0].name}`;
 
 					klon.querySelector("article").addEventListener("click", ()=>{location.href=projekt.link;})
 					container.appendChild(klon);

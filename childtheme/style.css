@@ -364,6 +364,7 @@ h1 {
 .hr_projekt {
   color: #234d1f;
   padding-inline: 2rem;
+  display: block;
 }
 
 .upload_div {
@@ -418,26 +419,34 @@ h1 {
   text-align: center;
 }
 
+#single_container .info {
+  text-align: center;
+}
+
 .img_container1 {
   width: 80vw;
   margin-inline: auto;
 }
 
-.img_container2 img {
-  width: 300px;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  margin-bottom: 3rem;
-}
-
-/* .img_container2 {
-  margin-inline: auto;
-} */
-
-/* .projekt_img {
+#single_container .beskrivelse {
   width: 80vw;
   margin-inline: auto;
-} */
+}
+
+.img_container2 {
+  width: 80vw;
+  margin-inline: auto;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.bunden {
+  width: 80vw;
+  margin-inline: auto;
+  margin-top: 2rem;
+}
 
 .projekt_knap,
 .materialer_knap {
@@ -445,11 +454,40 @@ h1 {
   background-color: #299a48;
   border: none;
   border-radius: 0%;
-  margin: 1rem;
+  margin-block: 1rem;
 }
 .projekt_knap:hover,
 .materialer_knap:hover {
   background-color: #234d1f;
+}
+
+@media (min-width: 600px) {
+  .img_container1 {
+    display: grid;
+    place-content: center;
+  }
+
+  .img_container2 img {
+    width: 320px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  .bunden {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .bunden img {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .bunden .bund_knapper {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
 }
 
 /*______________________________Medias________________________________*/
