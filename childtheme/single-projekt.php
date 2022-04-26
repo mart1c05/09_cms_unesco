@@ -19,16 +19,26 @@ get_header();
 		<section id="single_container">
      
           <article>
-            <img class="single_img" src="" alt="" />
-            <h3></h3>
-            <p class="aargang"></p>
-            <p class="fag"></p>
+		 	 <h3></h3>
+		  	<p class="info" ></p>
+			<div class="img_container1">
+        	<img class="single_img" src="" alt="" />
+			</div>
+            <p class="beskrivelse"></p>
+			<div class="img_container2">
+				<img class="lille1" src="" alt="">
+				<img class="lille2" src="" alt="">
+				<img class="lille3" src="" alt="">
+			</div>
           </article>
+
+		  <img class="projekt_img" src="./logo/nyt-logo-grøn.png" alt="logo">
+		  <button class="projekt_knap">Projekter</button>
+		  <button class="materialer_knap">Undervisningsmateriale</button>
        
       </section>
 
 		</main><!-- #main -->
-		<h1>SINGLE VIEW</h1>
 
 		<script>
 			let projekter;
@@ -47,11 +57,13 @@ get_header();
 			function vis(){
 				console.log(projekter);
 				console.log("hej");
-					document.querySelector(".single_img").src = projekter.billede.guid;
 					document.querySelector("h3").textContent = projekter.title.rendered;
-					document.querySelector(".aargang").textContent = projekter.aargang[0].name;
-					document.querySelector(".fag").textContent = projekter.fagvalg[0].name;
-					
+					document.querySelector(".info").textContent= `Skole: ${projekter.skolenavn}, ` + `Kontaktes på email: ${projekter.kontakt}`
+					document.querySelector(".single_img").src = projekter.billede.guid;
+					document.querySelector(".beskrivelse").textContent = projekter.beskrivelse
+					document.querySelector(".lille1").src = projekter.lilleimg1.guid;
+					document.querySelector(".lille2").src = projekter.lilleimg2.guid;
+					document.querySelector(".lille3").src = projekter.lilleimg3.guid;
 
 			}
 

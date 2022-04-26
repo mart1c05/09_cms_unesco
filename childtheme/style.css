@@ -1,7 +1,7 @@
 /*
 Theme Name: Unesco Opgave
 Template: twentynineteen
-Version: 1.0.5
+Version: 1.0.6
 Description: Twenty Nineteen Child Theme
 Author: Martha S
 
@@ -22,7 +22,8 @@ em,
 footer p,
 .menu-navigation-container,
 figcaption,
-h2 {
+h2,
+h3 {
   font-family: sofia-pro, sans-serif;
   font-weight: bold;
   font-style: normal;
@@ -329,11 +330,106 @@ button {
 /*____________________________________________________________________________*/
 
 /*______________________________Projekter CSS________________________________*/
+h1 {
+  font-family: sofia-pro, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #234d1f;
+  text-align: center;
+}
+
+#filtrering {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-block: 2rem;
+}
+
+#filtrering button {
+  color: #f9f6fe;
+  background-color: #299a48;
+  border: none;
+  border-radius: 0%;
+}
+
+#filtrering button:hover {
+  background-color: #234d1f;
+}
+
 #container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   padding-inline: 4rem;
+}
+
+#container img {
+  width: 300px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+#container h3 {
+  color: #234d1f;
+  margin: 0 0 0.5rem 0;
+}
+
+#container p {
+  line-height: 1.3rem;
+}
+
+#container .aargang,
+#container .fag {
+  margin: 0 0 2rem 0;
+}
+
+/*_______________________________Single View CSS_____________________*/
+
+#single_container h3 {
+  color: #234d1f;
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+}
+
+#single_container .info {
+  padding: 0.5rem;
+  margin-inline: 2rem;
+}
+
+.img_container1 {
+  display: grid;
+}
+
+.single_img .lille1,
+.lille2,
+.lille3 {
+  max-width: 80%;
+  place-self: center;
+}
+
+#single_container .beskrivelse {
+  margin-inline: 2rem;
+}
+
+.img_container2 img {
+  width: 300px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin-bottom: 3rem;
+}
+
+.projekt_knap,
+.materialer_knap {
+  color: #f9f6fe;
+  background-color: #299a48;
+  border: none;
+  border-radius: 0%;
+  margin: 1rem;
+}
+.projekt_knap:hover,
+.materialer_knap:hover {
+  background-color: #234d1f;
 }
 
 /*______________________________Medias________________________________*/

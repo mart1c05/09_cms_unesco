@@ -14,6 +14,7 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
+			<h1>Projekter</h1>
 			<section id="filtrering">
 				<button class="filter" data-klassetrin="alle">Alle</button>
 			</section>
@@ -25,13 +26,11 @@ get_header();
             <img src="" alt="" />
             <h3></h3>
             <p class="aargang"></p>
-            <p class="fag"></p>
           </article>
         </template>
       </section>
 
 		</main><!-- #main -->
-		<h1>TEST FOR HELVEE</h1>
 
 		<script>
 			let projekter;
@@ -87,8 +86,7 @@ get_header();
 					const klon = template.cloneNode(true).content;
 					klon.querySelector("img").src = projekt.billede.guid;
 					klon.querySelector("h3").textContent = projekt.title.rendered;
-					klon.querySelector(".aargang").textContent = projekt.aargang[0].name;
-					klon.querySelector(".fag").textContent = projekt.fagvalg[0].name;
+					klon.querySelector(".aargang").textContent = `Klassetrin: ${projekt.aargang[0].name}, ` + `Fagtype: ${projekt.fagvalg[0].name}`;
 
 					klon.querySelector("article").addEventListener("click", ()=>{location.href=projekt.link;})
 					container.appendChild(klon);
