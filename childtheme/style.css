@@ -285,10 +285,20 @@ button {
 .forside
   .entry
   .entry-content
-  .wp-block-button:not(.is-style-squared)
-  .wp-block-button__link {
-  background-color: #299a48;
+  .wp-block-button
+  .wp-block-button__link:not(.has-background) {
   border-radius: 0%;
+  border: 2px solid #f9f6fe;
+  background-color: #299a48;
+}
+.forside
+  .entry
+  .entry-content
+  .wp-block-button
+  .wp-block-button__link:not(.has-background):hover {
+  background-color: #f9f6fe;
+  color: #299a48;
+  border: 2px solid #f9f6fe;
 }
 
 .forside .entry-title {
@@ -328,7 +338,7 @@ button {
 .forside a {
   color: #f9f6fe;
 }
-.forside .forside .wp-image-86 {
+.forside .wp-image-86 {
   max-width: 80%;
   margin: auto;
 }
@@ -532,12 +542,16 @@ h1 {
   }
 
   .forside .wp-image-86 {
-    margin: auto;
     max-width: 110%;
   }
-  .entry-content :nth-child(4) {
-    margin: 20px;
-    gap: 80px;
+  .forside .entry-content {
+    display: grid;
+  }
+  .forside .start_container {
+    justify-self: center;
+  }
+  .forside .wp-block-columns alignwide .are-vertically-aligned-center {
+    justify-self: center;
   }
 
   #post-33 .wp-image-316 {
