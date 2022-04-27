@@ -517,7 +517,7 @@ h1 {
 }
 @media (min-width: 600px) {
   .forside .site-header {
-    background-image: url(billeder/header_billede.png);
+    background-image: url(billeder/header_billede.webp);
     background-size: cover;
     height: 600px;
   }
