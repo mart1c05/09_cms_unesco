@@ -18,7 +18,8 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
 	<?php wp_head(); ?>
 </head>
-
+<!-- If sætning på page 39 (forsiden) så det er muligt at putte en class på forsidens body kun -->
+<!-- Else sætningen er lavet i tilfælde af at der skal styling på alle undersiderne kun -->
 <?php if ( is_page( '39' ) ) { ?>
 	<body class="forside" <?php body_class(); ?>>
 

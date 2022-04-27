@@ -145,125 +145,6 @@ hr {
 .entry-content {
   margin: 30px;
 }
-
-/*____________________________________VERDENSMÅLSKOLER____________________________________*/
-
-.wp-block-table td {
-  border-style: none;
-  padding: 1em;
-}
-
-.wp-container-1 .wp-block-group__inner-container {
-  background-color: white;
-  border: #234d1f 1px solid;
-  display: grid;
-  margin-bottom: 30px;
-}
-.wp-container-1 .wp-block-group__inner-container p {
-  padding: 1.5em;
-}
-.wp-container-1 .wp-block-group__inner-container h2 {
-  font-size: 1.5rem;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.entry
-  .entry-content
-  .wp-block-button
-  .wp-block-button__link:not(.has-background) {
-  color: #f9f6fe;
-  background-color: #234d1f;
-  border-radius: 0%;
-}
-
-.entry
-  .entry-content
-  .wp-block-button
-  .wp-block-button__link:not(.has-background):hover {
-  background-color: #299a48;
-}
-
-/* Kontakt side */
-input[type="submit"] {
-  background-color: #234d1f;
-  color: #f9f6fe;
-  border-radius: 0%;
-  display: grid;
-  justify-content: end;
-}
-
-input[type="submit"]:hover {
-  background-color: #299a48;
-}
-/*____________________________________UNDERVISNINGSMATERIALER ____________________________________*/
-
-#post-46.post-46.page.type-page.status-publish.hentry.entry {
-  background-color: #299a48;
-}
-
-#post-46.post-46.page.type-page.status-publish.hentry.entry
-  header.entry-header
-  h1.entry-title {
-  color: #f9f6fe;
-  background-color: #299a48;
-}
-
-/*____________________________________OM UNESCO ASP____________________________________*/
-#post-33 .entry-content {
-  display: grid;
-  justify-content: center;
-  margin-left: 20px;
-  margin-right: 20px;
-  max-width: 100%;
-}
-
-#post-33 .wp-image-316 {
-  max-width: 50%;
-  margin: auto;
-}
-/*____________________________________FOOTER____________________________________*/
-
-#colophon .widget-column .widget {
-  margin-right: calc(3 * 1rem);
-  width: calc(100% - (3 * 1rem));
-}
-.site-footer {
-  border-top: 2px solid #f9f6fe;
-}
-button svg {
-  display: none;
-}
-button {
-  font-family: sofia-pro, sans-serif;
-  font-stretch: condensed;
-  font-style: normal;
-}
-.wp-block-search__button {
-  color: #234d1f;
-  background-color: #f9f6fe;
-  border: none;
-  border-radius: 0%;
-}
-
-.wp-block-search__button:hover {
-  background-color: #299a48;
-  color: #f9f6fe;
-}
-
-.wp-block-search__input {
-  background-color: #f9f6fe;
-  color: lightgray;
-  font-style: italic;
-}
-.wp-block-search.wp-block-search__button-inside
-  .wp-block-search__inside-wrapper {
-  border: none;
-}
-.wp-block-column {
-  max-width: 500px;
-}
-
 /*____________________________________FORSIDE____________________________________*/
 
 .forside #site-navigation {
@@ -341,6 +222,84 @@ button {
 .forside .wp-image-86 {
   max-width: 80%;
   margin: auto;
+}
+
+/*____________________________________OM UNESCO ASP____________________________________*/
+#post-33 .entry-content {
+  display: grid;
+  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  max-width: 100%;
+}
+
+#post-33 .wp-image-316 {
+  max-width: 50%;
+  margin: auto;
+}
+
+/*____________________________________VERDENSMÅLSKOLER____________________________________*/
+
+.wp-block-table td {
+  border-style: none;
+  padding: 1em;
+}
+
+.wp-container-1 .wp-block-group__inner-container {
+  background-color: white;
+  border: #234d1f 1px solid;
+  display: grid;
+  margin-bottom: 30px;
+}
+.wp-container-1 .wp-block-group__inner-container p {
+  padding: 1.5em;
+}
+.wp-container-1 .wp-block-group__inner-container h2 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.entry
+  .entry-content
+  .wp-block-button
+  .wp-block-button__link:not(.has-background) {
+  color: #f9f6fe;
+  background-color: #234d1f;
+  border-radius: 0%;
+}
+
+.entry
+  .entry-content
+  .wp-block-button
+  .wp-block-button__link:not(.has-background):hover {
+  background-color: #299a48;
+}
+
+/*____________________________________KONTAKT ____________________________________*/
+input[type="submit"] {
+  background-color: #234d1f;
+  color: #f9f6fe;
+  border-radius: 0%;
+  display: grid;
+  justify-content: end;
+}
+
+input[type="submit"]:hover {
+  background-color: #299a48;
+}
+
+/*____________________________________UNDERVISNINGSMATERIALER ____________________________________*/
+
+#post-46.post-46.page.type-page.status-publish.hentry.entry {
+  background-color: #299a48;
+}
+
+#post-46.post-46.page.type-page.status-publish.hentry.entry
+  header.entry-header
+  h1.entry-title {
+  color: #f9f6fe;
+  background-color: #299a48;
 }
 
 /*______________________________Projekter CSS________________________________*/
@@ -469,6 +428,48 @@ h1 {
 .projekt_knap:hover,
 .materialer_knap:hover {
   background-color: #234d1f;
+}
+
+/*____________________________________FOOTER____________________________________*/
+
+#colophon .widget-column .widget {
+  margin-right: calc(3 * 1rem);
+  width: calc(100% - (3 * 1rem));
+}
+.site-footer {
+  border-top: 2px solid #f9f6fe;
+}
+button svg {
+  display: none;
+}
+button {
+  font-family: sofia-pro, sans-serif;
+  font-stretch: condensed;
+  font-style: normal;
+}
+.wp-block-search__button {
+  color: #234d1f;
+  background-color: #f9f6fe;
+  border: none;
+  border-radius: 0%;
+}
+
+.wp-block-search__button:hover {
+  background-color: #299a48;
+  color: #f9f6fe;
+}
+
+.wp-block-search__input {
+  background-color: #f9f6fe;
+  color: lightgray;
+  font-style: italic;
+}
+.wp-block-search.wp-block-search__button-inside
+  .wp-block-search__inside-wrapper {
+  border: none;
+}
+.wp-block-column {
+  max-width: 500px;
 }
 
 @media (min-width: 600px) {
