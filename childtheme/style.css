@@ -417,13 +417,19 @@ h1 {
   margin-top: 2rem;
 }
 
+.bund_knapper {
+  display: flex;
+  flex-direction: row;
+}
+
 .projekt_knap,
 .materialer_knap {
   color: #f9f6fe;
   background-color: #299a48;
   border: none;
   border-radius: 0%;
-  margin-block: 1rem;
+
+  max-block-size: 80px;
 }
 .projekt_knap:hover,
 .materialer_knap:hover {
