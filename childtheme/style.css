@@ -415,11 +415,13 @@ h1 {
   width: 80vw;
   margin-inline: auto;
   margin-top: 2rem;
+  margin-bottom: 30px;
 }
 
 .bund_knapper {
   display: flex;
   flex-direction: row;
+  gap: 5px;
 }
 
 .projekt_knap,
@@ -429,7 +431,7 @@ h1 {
   border: none;
   border-radius: 0%;
 
-  max-block-size: 80px;
+  max-block-size: 70px;
 }
 .projekt_knap:hover,
 .materialer_knap:hover {
@@ -478,7 +480,24 @@ button {
   max-width: 500px;
 }
 
+/*______________________________Medias________________________________*/
 @media (min-width: 600px) {
+  .main-navigation .main-menu > li > a {
+    padding: 20px;
+    font-size: 1rem;
+  }
+  .main-navigation .sub-menu > li > a {
+    font-size: 0.8rem;
+  }
+  #site-navigation {
+    display: grid;
+    justify-content: end;
+    margin-right: -100px;
+  }
+  #post-33 .wp-image-316 {
+    max-width: 60%;
+    margin-left: auto;
+  }
   .img_container1 {
     display: grid;
     place-content: center;
@@ -496,30 +515,17 @@ button {
   }
   .bunden img {
     grid-column: 1/2;
-    grid-row: 1/3;
+    grid-row: 1/2;
+    max-width: 80%;
+    margin: auto;
   }
-  .bunden .bund_knapper {
+  .bund_knapper {
     grid-column: 2/3;
     grid-row: 1/2;
+    margin: auto;
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-  }
-}
-
-/*______________________________Medias________________________________*/
-@media (min-width: 600px) {
-  .main-navigation .main-menu > li > a {
-    padding: 20px;
-    font-size: 1rem;
-  }
-  .main-navigation .sub-menu > li > a {
-    font-size: 0.8rem;
-  }
-  #site-navigation {
-    display: grid;
-    justify-content: end;
-    margin-right: -100px;
+    flex-direction: column;
+    gap: 30px;
   }
 }
 @media (min-width: 600px) {
@@ -559,10 +565,5 @@ button {
   }
   .forside .wp-block-columns alignwide .are-vertically-aligned-center {
     justify-self: center;
-  }
-
-  #post-33 .wp-image-316 {
-    max-width: 60%;
-    margin-left: auto;
   }
 }
