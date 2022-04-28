@@ -219,7 +219,7 @@ hr {
 .forside a {
   color: #f9f6fe;
 }
-.forside .wp-image-86 {
+.forside .wp-image-523 {
   max-width: 80%;
   margin: auto;
 }
@@ -553,9 +553,12 @@ button {
     margin-right: -100px;
     margin-top: 0;
   }
+  .forside .wp-image-523 {
+    min-width: 120%;
+  }
 
-  .forside .wp-image-86 {
-    max-width: 110%;
+  .forside .verdens_container {
+    gap: 150px;
   }
   .forside .entry-content {
     display: grid;
